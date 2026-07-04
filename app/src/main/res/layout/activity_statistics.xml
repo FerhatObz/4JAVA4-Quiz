@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_premium_glass"
+    tools:context=".StatisticsActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="8dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_revert"
+            android:contentDescription="Geri"
+            android:tint="@color/primary_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/btnBack"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="İstatistik Raporum"
+            android:textColor="@color/primary_text"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layoutToolbar"
+        android:paddingHorizontal="16dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    app:cardBackgroundColor="@color/card_background"
+                    app:strokeColor="@color/glass_border"
+                    app:strokeWidth="1.2dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kategoriler" android:textColor="@color/secondary_text" android:textSize="14sp" />
+                        <TextView android:id="@+id/tvStatCategories" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:text="0" android:textColor="@color/primary_text" android:textSize="28sp" android:textStyle="bold" />
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    app:cardBackgroundColor="@color/card_background"
+                    app:strokeColor="@color/glass_border"
+                    app:strokeWidth="1.2dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kelimeler" android:textColor="@color/secondary_text" android:textSize="14sp" />
+                        <TextView android:id="@+id/tvStatWords" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:text="0" android:textColor="@color/primary_accent" android:textSize="28sp" android:textStyle="bold" />
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    app:cardBackgroundColor="@color/card_background"
+                    app:strokeColor="@color/glass_border"
+                    app:strokeWidth="1.2dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cümleler" android:textColor="@color/secondary_text" android:textSize="14sp" />
+                        <TextView android:id="@+id/tvStatSentences" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:text="0" android:textColor="@color/secondary_accent" android:textSize="28sp" android:textStyle="bold" />
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    app:cardBackgroundColor="@color/card_background"
+                    app:strokeColor="@color/glass_border"
+                    app:strokeWidth="1.2dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Favoriler" android:textColor="@color/secondary_text" android:textSize="14sp" />
+                        <TextView android:id="@+id/tvStatFavorites" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:text="0" android:textColor="@color/warning" android:textSize="28sp" android:textStyle="bold" />
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    app:cardBackgroundColor="@color/card_background"
+                    app:strokeColor="@color/glass_border"
+                    app:strokeWidth="1.2dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Öğrenilenler" android:textColor="@color/secondary_text" android:textSize="14sp" />
+                        <TextView android:id="@+id/tvStatLearned" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:text="0" android:textColor="@color/success" android:textSize="28sp" android:textStyle="bold" />
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    app:cardBackgroundColor="@color/card_background"
+                    app:strokeColor="@color/glass_border"
+                    app:strokeWidth="1.2dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bugün Eklenen" android:textColor="@color/secondary_text" android:textSize="14sp" />
+                        <TextView android:id="@+id/tvStatToday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:text="0" android:textColor="@color/error" android:textSize="28sp" android:textStyle="bold" />
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_premium_glass"
+    android:padding="24dp"
+    tools:context=".FlashcardActivity">
+
+    <!-- Geri -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_menu_revert"
+        android:contentDescription="Geri"
+        android:tint="@color/primary_text" />
+
+    <!-- Durum -->
+    <TextView
+        android:id="@+id/tvProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="1 / 10"
+        android:textColor="@color/primary_text"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/pbProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_below="@id/tvProgress"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="24dp"
+        android:progressTint="@color/primary_accent"
+        android:progressBackgroundTint="@color/glass_border"
+        android:max="100"
+        android:progress="0" />
+
+    <!-- Merkezdeki Kart (Frosted Glass Koyu Antrasit) -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardFlashcard"
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@color/card_background"
+        app:strokeColor="@color/glass_border"
+        app:strokeWidth="1.2dp"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="0dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="24dp">
+
+            <!-- Doğru Göstergesi -->
+            <TextView
+                android:id="@+id/tvCorrectIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="16dp"
+                android:text="ÖĞRENDİM"
+                android:textColor="@color/success"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp"
+                android:background="@drawable/bg_indicator_correct"
+                android:rotation="-15"
+                android:alpha="0" />
+
+            <!-- Yanlış Göstergesi -->
+            <TextView
+                android:id="@+id/tvIncorrectIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="16dp"
+                android:text="BİLEMEDİM"
+                android:textColor="@color/error"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp"
+                android:background="@drawable/bg_indicator_incorrect"
+                android:rotation="15"
+                android:alpha="0" />
+
+            <TextView
+                android:id="@+id/tvLanguageLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-medium"
+                android:text="İngilizce"
+                android:textColor="@color/secondary_accent"
+                android:textSize="14sp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:letterSpacing="0.1" />
+
+            <!-- Kelime Metni (Beyaz Renk, Yüksek Okunabilirlik) -->
+            <TextView
+                android:id="@+id/tvWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Word"
+                android:textColor="@color/primary_text"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Tersini görmek için dokunun"
+                android:textColor="@color/secondary_text"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnReshuffle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/card_background"
+            android:text="Kartları Yeniden Karıştır"
+            android:textAllCaps="false"
+            android:textColor="@color/primary_text"
+            app:strokeColor="@color/glass_border"
+            app:strokeWidth="1.2dp"
+            app:cornerRadius="12dp"
+            app:icon="@android:drawable/ic_popup_sync"
+            app:iconTint="@color/primary_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Öğrendim için sağa 👉 | Bilemedim için 👈 sola"
+            android:textColor="@color/secondary_text"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

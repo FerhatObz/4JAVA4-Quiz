@@ -1,0 +1,4 @@
+com.example.kelimequiz.test.app-androidTest-0 C:\Users\obuzf\Desktop\Kelime Quiz\app\build\generated\res\resValues\androidTest\debug
+com.example.kelimequiz.test.app-mergeDebugAndroidTestResources-1 C:\Users\obuzf\Desktop\Kelime Quiz\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.kelimequiz.test.app-mergeDebugAndroidTestResources-2 C:\Users\obuzf\Desktop\Kelime Quiz\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.kelimequiz.test.app-merged_res-3 C:\Users\obuzf\Desktop\Kelime Quiz\app\build\intermediates\merged_res\debugAndroidTest

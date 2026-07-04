@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Açık Tema Renkleri (Nothing OS / Apple Light Tasarım) -->
+    <color name="primary_background">#F4F6F9</color>
+    <color name="secondary_background">#FFFFFF</color>
+    <color name="surface">#E5E7EB</color>
+    <color name="card_background">#CCFFFFFF</color> <!-- Transparan beyaz -->
+    <color name="primary_accent">#2563EB</color> <!-- Daha koyu canlı mavi -->
+    <color name="secondary_accent">#3B82F6</color>
+    <color name="success">#16A34A</color>
+    <color name="warning">#D97706</color>
+    <color name="error">#DC2626</color>
+    <color name="primary_text">#1F2937</color> <!-- Koyu gri / siyah metin -->
+    <color name="secondary_text">#4B5563</color>
+    
+    <color name="glass_border">#1F000000</color> <!-- Transparan siyah çerçeve -->
+    <color name="glass_border_light">#0F000000</color>
+    <color name="glass_item_background">#0A000000</color>
+
+    <color name="purple_500">#2563EB</color>
+    <color name="purple_700">#1D4ED8</color>
+    <color name="teal_200">#3B82F6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

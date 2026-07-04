@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_premium_glass"
+    tools:context=".MainActivity">
+
+    <!-- Üst Başlık -->
+    <RelativeLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="12dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="4JAVA4 Quiz"
+                android:textColor="@color/primary_text"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.02" />
+
+            <!-- Ufak Marka Rozeti -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_brand_badge"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:text="4J4"
+                android:textColor="@color/primary_text"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnFavorites"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@android:drawable/btn_star_big_on"
+                android:contentDescription="Favoriler"
+                android:layout_marginEnd="8dp" />
+
+            <ImageButton
+                android:id="@+id/btnSettings"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@android:drawable/ic_menu_preferences"
+                android:contentDescription="Ayarlar"
+                android:tint="@color/primary_text" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Global Arama -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutHeader"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="14dp"
+        app:cardBackgroundColor="@color/card_background"
+        app:strokeColor="@color/glass_border"
+        app:strokeWidth="1.2dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp">
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:drawableStart="@android:drawable/ic_menu_search"
+            android:drawablePadding="12dp"
+            android:hint="Kategori veya kelime ara..."
+            android:inputType="text"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/secondary_text"
+            android:textSize="16sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Hızlı Eylemler (Cümleler & İstatistik) -->
+    <LinearLayout
+        android:id="@+id/layoutSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardSearch"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="14dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardSentences"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            app:cardBackgroundColor="@color/card_background"
+            app:strokeColor="@color/glass_border"
+            app:strokeWidth="1.2dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/lblSentences"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Sık Cümleler"
+                    android:textColor="@color/secondary_accent"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvSentencesCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lblSentences"
+                    android:layout_marginTop="4dp"
+                    android:text="0 Cümle"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardStats"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/card_background"
+            app:strokeColor="@color/glass_border"
+            app:strokeWidth="1.2dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/lblStats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="İstatistikler"
+                    android:textColor="@color/primary_accent"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvStatsSummary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lblStats"
+                    android:layout_marginTop="4dp"
+                    android:text="Raporu İncele ➔"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <!-- Kategori Listesi -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCategories"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layoutSummary"
+        android:layout_above="@+id/btnCreateCategory"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:scrollbars="none" />
+
+    <!-- Onboarding Mesajı -->
+    <TextView
+        android:id="@+id/tvEmptyState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="40dp"
+        android:gravity="center"
+        android:lineSpacingExtra="6dp"
+        android:text="Hoş Geldiniz! 👋\n\nHenüz bir kategori oluşturmadınız.\nAşağıdaki butona basarak ilk kategorinizi oluşturup kelimelerinizi eklemeye başlayın!"
+        android:textColor="@color/secondary_text"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <!-- Yeni Kategori Oluştur Butonu -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCreateCategory"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/primary_accent"
+        android:text="Yeni Kategori Oluştur"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_text"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:cornerRadius="16dp"
+        app:icon="@android:drawable/ic_input_add"
+        app:iconTint="@color/primary_text"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp"
+        app:elevation="4dp" />
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="card_background">#CCFFFFFF</color>
+    <color name="error">#DC2626</color>
+    <color name="glass_border">#1F000000</color>
+    <color name="glass_border_light">#0F000000</color>
+    <color name="glass_item_background">#0A000000</color>
+    <color name="primary_accent">#2563EB</color>
+    <color name="primary_background">#F4F6F9</color>
+    <color name="primary_text">#1F2937</color>
+    <color name="purple_500">#2563EB</color>
+    <color name="purple_700">#1D4ED8</color>
+    <color name="secondary_accent">#3B82F6</color>
+    <color name="secondary_background">#FFFFFF</color>
+    <color name="secondary_text">#4B5563</color>
+    <color name="success">#16A34A</color>
+    <color name="surface">#E5E7EB</color>
+    <color name="teal_200">#3B82F6</color>
+    <color name="warning">#D97706</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">Dil Kartlarım</string>
+    <style name="Theme.KelimeQuiz" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_accent</item>
+        <item name="colorOnPrimary">@color/primary_text</item>
+        <item name="colorSecondary">@color/secondary_accent</item>
+        <item name="colorOnSecondary">@color/primary_text</item>
+        <item name="android:statusBarColor">@color/secondary_background</item>
+        <item name="android:navigationBarColor">@color/primary_background</item>
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColorSecondary">@color/secondary_text</item>
+    </style>
+</resources>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_premium_glass"
+    android:padding="24dp"
+    tools:context=".QuizActivity">
+
+    <!-- Geri -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_menu_revert"
+        android:contentDescription="Geri"
+        android:tint="@color/primary_text" />
+
+    <TextView
+        android:id="@+id/tvQuizProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Soru: 1 / 10"
+        android:textColor="@color/primary_text"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Soru Kartı -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@id/tvQuizProgress"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        app:cardBackgroundColor="@color/card_background"
+        app:strokeColor="@color/glass_border"
+        app:strokeWidth="1.2dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="İNGİLİZCE KELİME"
+                android:textColor="@color/primary_accent"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.1" />
+
+            <TextView
+                android:id="@+id/tvQuestionWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Question Word"
+                android:textColor="@color/primary_text"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Şıklar -->
+    <LinearLayout
+        android:id="@+id/layoutOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardQuestion"
+        android:orientation="vertical">
+
+        <!-- Seçenek A -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardOptionA"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="12dp"
+            app:cardBackgroundColor="@color/card_background"
+            app:strokeColor="@color/glass_border"
+            app:strokeWidth="1.2dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <TextView
+                android:id="@+id/tvOptionA"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:ellipsize="end" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Seçenek B -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardOptionB"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="12dp"
+            app:cardBackgroundColor="@color/card_background"
+            app:strokeColor="@color/glass_border"
+            app:strokeWidth="1.2dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <TextView
+                android:id="@+id/tvOptionB"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:ellipsize="end" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Seçenek C -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardOptionC"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="12dp"
+            app:cardBackgroundColor="@color/card_background"
+            app:strokeColor="@color/glass_border"
+            app:strokeWidth="1.2dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <TextView
+                android:id="@+id/tvOptionC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:ellipsize="end" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Seçenek D -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardOptionD"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="12dp"
+            app:cardBackgroundColor="@color/card_background"
+            app:strokeColor="@color/glass_border"
+            app:strokeWidth="1.2dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <TextView
+                android:id="@+id/tvOptionD"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:ellipsize="end" />
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+</RelativeLayout>

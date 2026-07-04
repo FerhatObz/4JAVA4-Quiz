@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Koyu Tema Renkleri (Premium Koyu Tasarım) -->
+    <color name="primary_background">#0D1117</color>
+    <color name="secondary_background">#161B22</color>
+    <color name="surface">#1C2128</color>
+    <color name="card_background">#BF161B22</color>
+    <color name="primary_accent">#3B82F6</color>
+    <color name="secondary_accent">#60A5FA</color>
+    <color name="success">#22C55E</color>
+    <color name="warning">#F59E0B</color>
+    <color name="error">#EF4444</color>
+    <color name="primary_text">#FFFFFF</color>
+    <color name="secondary_text">#94A3B8</color>
+    
+    <color name="glass_border">#26FFFFFF</color>
+    <color name="glass_border_light">#1CFFFFFF</color>
+    <color name="glass_item_background">#1AFFFFFF</color>
+
+    <color name="purple_500">#3B82F6</color>
+    <color name="purple_700">#1D4ED8</color>
+    <color name="teal_200">#60A5FA</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

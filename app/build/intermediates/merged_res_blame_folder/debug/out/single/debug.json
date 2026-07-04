@@ -1,0 +1,94 @@
+[
+    {
+        "merged": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-merged_res-32:\\drawable_bg_premium_glass.xml.flat",
+        "source": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-main-34:\\drawable\\bg_premium_glass.xml"
+    },
+    {
+        "merged": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-merged_res-32:\\anim_slide_out_right.xml.flat",
+        "source": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-main-34:\\anim\\slide_out_right.xml"
+    },
+    {
+        "merged": "com.example.kelimequiz.app-merged_res-32:/layout_activity_quiz.xml.flat",
+        "source": "com.example.kelimequiz.app-main-34:/layout/activity_quiz.xml"
+    },
+    {
+        "merged": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-merged_res-32:\\layout_list_item_sentence.xml.flat",
+        "source": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-main-34:\\layout\\list_item_sentence.xml"
+    },
+    {
+        "merged": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-merged_res-32:\\layout_activity_favorites.xml.flat",
+        "source": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-main-34:\\layout\\activity_favorites.xml"
+    },
+    {
+        "merged": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-merged_res-32:\\layout_activity_settings.xml.flat",
+        "source": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-main-34:\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-merged_res-32:\\layout_activity_statistics.xml.flat",
+        "source": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-main-34:\\layout\\activity_statistics.xml"
+    },
+    {
+        "merged": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-merged_res-32:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-main-34:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-merged_res-32:\\layout_dialog_add_sentence.xml.flat",
+        "source": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-main-34:\\layout\\dialog_add_sentence.xml"
+    },
+    {
+        "merged": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-merged_res-32:\\anim_slide_in_right.xml.flat",
+        "source": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-main-34:\\anim\\slide_in_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-merged_res-32:\\anim_slide_in_left.xml.flat",
+        "source": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-main-34:\\anim\\slide_in_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-merged_res-32:\\anim_slide_out_left.xml.flat",
+        "source": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-main-34:\\anim\\slide_out_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-merged_res-32:\\layout_list_item_word_card.xml.flat",
+        "source": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-main-34:\\layout\\list_item_word_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-merged_res-32:\\layout_activity_category_detail.xml.flat",
+        "source": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-main-34:\\layout\\activity_category_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-merged_res-32:\\layout_list_item_category.xml.flat",
+        "source": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-main-34:\\layout\\list_item_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-merged_res-32:\\drawable_bg_indicator_incorrect.xml.flat",
+        "source": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-main-34:\\drawable\\bg_indicator_incorrect.xml"
+    },
+    {
+        "merged": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-merged_res-32:\\layout_dialog_add_category.xml.flat",
+        "source": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-main-34:\\layout\\dialog_add_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-merged_res-32:\\drawable_bg_brand_badge.xml.flat",
+        "source": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-main-34:\\drawable\\bg_brand_badge.xml"
+    },
+    {
+        "merged": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-merged_res-32:\\drawable_bg_indicator_correct.xml.flat",
+        "source": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-main-34:\\drawable\\bg_indicator_correct.xml"
+    },
+    {
+        "merged": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-merged_res-32:\\layout_dialog_add_word.xml.flat",
+        "source": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-main-34:\\layout\\dialog_add_word.xml"
+    },
+    {
+        "merged": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-merged_res-32:\\layout_activity_flashcard.xml.flat",
+        "source": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-main-34:\\layout\\activity_flashcard.xml"
+    },
+    {
+        "merged": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-merged_res-32:\\layout_activity_common_sentences.xml.flat",
+        "source": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-main-34:\\layout\\activity_common_sentences.xml"
+    },
+    {
+        "merged": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-merged_res-32:\\layout_activity_quiz.xml.flat",
+        "source": "C:\\Users\\obuzf\\.gradle\\daemon\\8.2\\com.example.kelimequiz.app-main-34:\\layout\\activity_quiz.xml"
+    }
+]
